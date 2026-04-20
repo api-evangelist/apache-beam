@@ -1,0 +1,141 @@
+vocabulary: 1.0.0
+info:
+  provider: Apache Beam
+  description: Domain vocabulary for Apache Beam covering pipeline programming 
+    model, transforms, runners, windowing, and I/O connectors.
+  created: '2026-04-19'
+  modified: '2026-04-19'
+operational:
+  apis:
+  - name: Apache Beam Java SDK
+    namespace: beam-java
+    version: 2.55.0
+    status: active
+  - name: Apache Beam Python SDK
+    namespace: beam-python
+    version: 2.55.0
+    status: active
+  - name: Apache Beam Go SDK
+    namespace: beam-go
+    version: 2.55.0
+    status: active
+  resources:
+  - name: pipeline
+    api: beam-python
+    actions:
+    - create
+    - run
+    - monitor
+  - name: pcollection
+    api: beam-python
+    actions:
+    - apply
+    - read
+    - write
+  - name: ptransform
+    api: beam-python
+    actions:
+    - apply
+    - expand
+  - name: window
+    api: beam-python
+    actions:
+    - assign
+    - trigger
+  - name: io-connectors
+    api: beam-java
+    actions:
+    - read
+    - write
+  - name: metrics
+    api: beam-python
+    actions:
+    - increment
+    - set
+    - query
+  actions:
+  - name: apply
+    pattern: transform
+  - name: read
+    pattern: read
+  - name: write
+    pattern: write
+  - name: run
+    pattern: execute
+  - name: monitor
+    pattern: read
+  schemas:
+    core:
+    - Pipeline
+    - PCollection
+    - PTransform
+    - PipelineOptions
+    - PipelineResult
+    windowing:
+    - Window
+    - FixedWindows
+    - SlidingWindows
+    - Sessions
+    - GlobalWindows
+    io:
+    - ReadFromBigQuery
+    - WriteToBigQuery
+    - ReadFromKafka
+    - WriteToKafka
+    - ReadFromText
+    - WriteToText
+    runners:
+    - DirectRunner
+    - FlinkRunner
+    - SparkRunner
+    - DataflowRunner
+  parameters:
+    identifiers:
+    - pipeline_id
+    - job_id
+    - transform_name
+    configuration:
+    - runner
+    - project
+    - region
+    - temp_location
+    - num_workers
+  enums:
+    runners:
+    - DirectRunner
+    - FlinkRunner
+    - SparkRunner
+    - DataflowRunner
+    - SamzaRunner
+    windowTypes:
+    - FixedWindows
+    - SlidingWindows
+    - Sessions
+    - GlobalWindows
+    pipelineState:
+    - RUNNING
+    - DONE
+    - FAILED
+    - CANCELLED
+  authentication:
+    schemes: []
+capability:
+  workflows: []
+  personas:
+  - id: data-engineer
+    name: Data Engineer
+    description: Engineers building batch and streaming data processing 
+      pipelines with Beam.
+    workflows: []
+  - id: ml-engineer
+    name: ML Engineer
+    description: Engineers running ML inference in distributed Beam pipelines.
+    workflows: []
+  domains:
+  - Batch Processing
+  - Stream Processing
+  - ETL
+  - Machine Learning
+  namespaces: []
+  binds: []
+crossReference: []
