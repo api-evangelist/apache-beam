@@ -69,13 +69,13 @@ common:
     url: https://www.apache.org/licenses/
   - type: ChangeLog
     url: https://beam.apache.org/blog/
-  - type: SDK
+  - type: SDKs
     url: https://pypi.org/project/apache-beam/
     title: Python SDK (PyPI)
-  - type: SDK
+  - type: SDKs
     url: https://search.maven.org/artifact/org.apache.beam/beam-sdks-java-core
     title: Java SDK (Maven)
-  - type: SDK
+  - type: SDKs
     url: https://pkg.go.dev/github.com/apache/beam/sdks/v2/go/pkg/beam
     title: Go SDK
   - type: Features
