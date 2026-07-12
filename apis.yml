@@ -51,6 +51,10 @@ apis:
       - type: Documentation
         url: https://beam.apache.org/documentation/runtime/environments/
 common:
+  - type: VulnerabilityDisclosure
+    url: security/apache-beam-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/apache-beam-domain-security.yml
   - type: LinkedIn
     url: https://www.linkedin.com/company/apache-beam
   - type: GitHubOrganization
@@ -130,6 +134,8 @@ common:
         description: HDFS I/O connector for reading and writing files on Hadoop HDFS.
       - name: TensorFlow Extended (TFX)
         description: TFX uses Beam as the runtime for ML data validation and preprocessing components.
+  - url: https://beam.apache.org/feed.xml
+    type: Blog
 maintainers:
   - FN: Kin Lane
     email: info@apievangelist.com
