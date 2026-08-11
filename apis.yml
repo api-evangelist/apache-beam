@@ -63,6 +63,17 @@ apis:
       - type: Documentation
         url: https://beam.apache.org/documentation/runtime/environments/
 common:
+  - type: IssueTracker
+    url: https://github.com/apache/beam/issues
+  - type: Releases
+    url: https://github.com/apache/beam/releases
+  - type: CodeOfConduct
+    url: https://github.com/apache/.github/blob/main/.github/CODE_OF_CONDUCT.md
+  - type: ContributionGuide
+    url: https://github.com/apache/beam/blob/master/CONTRIBUTING.md
+  - type: License
+    name: Apache-2.0
+    url: https://github.com/apache/beam/blob/master/LICENSE
   - type: VulnerabilityDisclosure
     url: security/apache-beam-vulnerability-disclosure.yml
   - type: DomainSecurity
