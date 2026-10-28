@@ -1,4 +1,4 @@
-# Apache Beam (apache-beam)
+# Apache Beam
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,109 +64,116 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Apache Beam is a unified, open-source programming model developed by the Apache Software Foundation for defining both batch and streaming data processing pipelines. It provides a portable API layer that lets developers write pipeline logic once in Java, Python, or Go and deploy it to multiple execution engines (runners) including Apache Flink, Apache Spark, Google Cloud Dataflow, and the direct runner for local testing.
+Apache Beam is a unified, open-source programming model developed by the Apache Software Foundation for defining both batch and streaming data processing pipelines. It provides a portable API layer that lets developers write pipeline logic once in Java, Python, or Go and deploy it to multiple execution engines (runners) including Apache Flink, Apache Spark, Google Cloud Dataflow, and the direct runner for local testing. The Beam portability framework enables cross-language pipelines and runner-agnostic execution.
 
-**URL:** [https://beam.apache.org/](https://beam.apache.org/)
+**Areas:** Apache · Batch Processing · Data Pipeline · ETL · Open Source · Python · Streaming · Unified Model
 
-**Run:** [Capabilities Using Naftiko](https://github.com/naftiko/fleet?utm_source=api-evangelist&utm_medium=readme&utm_campaign=company-api-evangelist&utm_content=repo)
+## Apache Beam on APIs.io
 
-## Tags
+Everything profiled for Apache Beam is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/apache-beam/](https://apis.io/providers/apache-beam/)** — or go straight to one of the APIs or properties below.
 
- - Apache, Batch Processing, Data Pipeline, ETL, Open Source, Python, Streaming, Unified Model
+### APIs (2)
 
-## Timestamps
+- [Apache Beam SDK](https://apis.io/apis/apache-beam/apache-beam-sdk/) — The Apache Beam SDK provides the programming model for constructing data processing pipelines. Available in Java, Python, and Go, it provides PCollections,…
+- [Apache Beam Job Service API](https://apis.io/apis/apache-beam/apache-beam-job-service/) — The Beam Job Service API provides a gRPC-based interface for submitting, managing, and monitoring Apache Beam pipeline jobs on supported runners. It is part…
 
-- **Created:** 2026-03-16
-- **Modified:** 2026-04-19
+### Published properties
 
-## APIs
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-### Apache Beam SDK
-The Apache Beam SDK provides the programming model for constructing data processing pipelines in Java, Python, and Go with PCollections, PTransforms, and Runners.
+#### Vocabulary (1)
 
-**Human URL:** [https://beam.apache.org/documentation/](https://beam.apache.org/documentation/)
+The provider's domain terms, defined.
 
-#### Tags
+- [Apache Beam Vocabulary](https://apis.io/vocabularies/apache-beam/apache-beam-vocabulary/)
 
- - Batch, Pipeline, SDK, Streaming
+#### Security (2)
 
-#### Properties
+Authentication, trust centre, and vulnerability disclosure.
 
-- [Documentation](https://beam.apache.org/documentation/)
-- [APIReference](https://beam.apache.org/releases/pydoc/current/)
-- [GettingStarted](https://beam.apache.org/get-started/wordcount-example/)
+- [Apache Beam Domain Security](https://apis.io/security/apache-beam/apache-beam-domain-security/)
+- [Apache Beam Vulnerability Disclosure](https://apis.io/security/apache-beam/apache-beam-vulnerability-disclosure/)
 
-### Apache Beam Job Service API
-The Beam Job Service API provides a gRPC-based interface for submitting, managing, and monitoring Apache Beam pipeline jobs on supported runners.
+#### Plans and pricing (1)
 
-**Human URL:** [https://beam.apache.org/documentation/runtime/environments/](https://beam.apache.org/documentation/runtime/environments/)
+Published plans, tiers and prices.
 
-#### Tags
+- [Apache Beam Plans Pricing](https://apis.io/plans/apache-beam/apache-beam-plans-pricing/)
 
- - gRPC, Job Management, Portability
+#### Rate limits (1)
 
-#### Properties
+Published request limits.
 
-- [Documentation](https://beam.apache.org/documentation/runtime/environments/)
+- [Apache Beam Rate Limits](https://apis.io/rate-limits/apache-beam/apache-beam-rate-limits/)
 
-## Common Properties
+#### FinOps (1)
 
-- [GitHubOrganization](https://github.com/apache)
-- [GitHubRepository](https://github.com/apache/beam)
+What the API costs to run, by operation.
+
+- [Apache Beam Finops](https://apis.io/finops/apache-beam/apache-beam-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.apache.org/)
 - [Documentation](https://beam.apache.org/)
-- [GettingStarted](https://beam.apache.org/get-started/)
-- [Tutorials](https://beam.apache.org/get-started/wordcount-example/)
+- [Getting started](https://beam.apache.org/get-started/)
 - [Support](https://beam.apache.org/community/contact-us/)
-- [TermsOfService](https://www.apache.org/licenses/)
-- [ChangeLog](https://beam.apache.org/blog/)
-- [Python SDK (PyPI)](https://pypi.org/project/apache-beam/)
-- [Java SDK (Maven)](https://search.maven.org/artifact/org.apache.beam/beam-sdks-java-core)
-- [Go SDK](https://pkg.go.dev/github.com/apache/beam/sdks/v2/go/pkg/beam)
+- [Changelog](https://beam.apache.org/blog/)
+- [Blog](https://beam.apache.org/feed.xml)
+- [Terms of service](https://www.apache.org/licenses/)
+- [GitHub](https://github.com/apache)
 
-## Features
+## API Evangelist rating
 
-| Name | Description |
-|------|-------------|
-| Unified Batch and Streaming | Single programming model for both batch and streaming data processing with consistent semantics. |
-| Runner Portability | Write pipeline logic once and execute on Apache Flink, Spark, Google Dataflow, Samza, or the local direct runner. |
-| Multi-Language Support | Native SDKs for Java, Python, and Go with cross-language transform support for mixing languages. |
-| Windowing and Triggers | Flexible windowing (fixed, sliding, session, global) and trigger strategies for streaming data processing. |
-| I/O Connectors | Built-in connectors for BigQuery, Kafka, Pub/Sub, GCS, HDFS, databases, and many other sources and sinks. |
-| Beam SQL | SQL-based data processing on Beam PCollections using Apache Calcite for query planning. |
-| ML Integration | RunInference transform for integrating ML model inference into Beam pipelines with TensorFlow, PyTorch, and sklearn. |
-| Schema-Aware Processing | Schema inference and typed PCollections for structured data processing with automatic serialization. |
-| Cross-Language Transforms | Call Java transforms from Python pipelines and vice versa via the Beam portability framework. |
-| Metrics and Monitoring | Built-in metrics API and integration with runner-specific monitoring dashboards. |
+**Kin Score 27.6** — thin · rubric 0.24.0 · scored 2026-10-17
 
-## Use Cases
+| Facet | Score |
+|---|---|
+| Discoverability | 57.1 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 26.3 |
+| Developer ergonomics | 52.4 |
+| Access clarity | 18.4 |
 
-| Name | Description |
-|------|-------------|
-| ETL Pipelines | Extract, transform, and load data between storage systems using portable, reusable pipeline components. |
-| Real-Time Stream Processing | Process high-throughput event streams with low-latency windowing and triggering strategies. |
-| Batch Data Analytics | Compute aggregate statistics, joins, and group-by operations on large historical datasets. |
-| ML Model Inference at Scale | Run ML model inference in distributed pipelines using the RunInference transform. |
-| Log and Event Processing | Parse, filter, and enrich log events from Kafka or Pub/Sub for operational analytics. |
-| Data Migration | Migrate data between cloud providers and storage systems using Beam's portable I/O connectors. |
+**Agent readiness 0.6** — human-only
 
-## Integrations
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
 
-| Name | Description |
-|------|-------------|
-| Google Cloud Dataflow | Managed Apache Beam runner on Google Cloud with autoscaling and monitoring. |
-| Apache Flink | Apache Flink runner for stateful stream processing with exactly-once semantics. |
-| Apache Spark | Apache Spark runner for batch and streaming processing on Spark clusters. |
-| Apache Kafka | Kafka I/O connector for reading and writing Kafka topics in Beam pipelines. |
-| Google BigQuery | BigQuery I/O connector for reading and writing BigQuery tables in Beam pipelines. |
-| Apache Hadoop | HDFS I/O connector for reading and writing files on Hadoop HDFS. |
-| TensorFlow Extended (TFX) | TFX uses Beam as the runtime for ML data validation and preprocessing components. |
+**Regulatory alignment 15.7** — Horizontal (data, software, accessibility, platform)
 
-## Vocabulary
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/apache-beam/](https://apis.io/providers/apache-beam/).
 
-- [Apache Beam Vocabulary](vocabulary/apache-beam-vocabulary.yaml) — Domain taxonomy mapping 6 resources, 5 actions, and 2 personas for Beam pipeline development and ML integration
+## How this profile is made
 
-## Maintainers
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
 
-**FN:** Kin Lane
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Apache Beam: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
 
-**Email:** info@apievangelist.com
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/apache-beam/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
